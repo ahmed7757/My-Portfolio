@@ -4,7 +4,7 @@ import { TbBrandNextjs } from "react-icons/tb"
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const iconVariants: any = (duration: number) => ({
     initial: { y: -10 },
