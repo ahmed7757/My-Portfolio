@@ -30,12 +30,14 @@ const Projects = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         initial={{ opacity: 0, x: 100 }}
                         transition={{ duration: 0.5 }}
-                        className="w-full max-w-xl lg:3/4">
+                        className="w-full max-w-xl lg:3/4 flex flex-col justify-center">
                         <h6 className="mb-2 font-semibold  text-primary">{Project.title}</h6>
                         <p className="mb-4 text-neutral dark:text-current">{Project.description}</p>
-                        {Project.technologies.map((tech, index) => (
-                            <span className="mr-2 rounded dark:bg-neutral-900 bg-purple-200 text-secondary px-2 py-1 text-sm font-medium dark:text-purple-900" key={index}>{tech}</span>
-                        ))}
+                        <div className="flex gap-4">
+                            {Project.technologies.map((tech, index) => (
+                                <span className=" rounded dark:bg-neutral-900 bg-purple-200 text-secondary px-2 py-1 text-sm font-medium dark:text-purple-900" key={index}>{tech}</span>
+                            ))}
+                        </div>
                     </motion.div>
                 </div>
             ))}</div>
