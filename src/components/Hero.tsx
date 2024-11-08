@@ -39,6 +39,7 @@ const Hero = () => {
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.1, delay: 1.2 }}
                             src={profilePic}
+                            className="rounded-2xl w-40 h-auto "
                             alt="Ahmed Gomaa" />
                     </div>
                 </div>
