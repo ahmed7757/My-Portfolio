@@ -15,6 +15,7 @@ interface Project {
   image: string; // Uncomment when images are imported
   description: string;
   technologies: string[];
+  link: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -24,6 +25,7 @@ export const PROJECTS: Project[] = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "#"
   },
   {
     title: "Users Website",
@@ -31,6 +33,7 @@ export const PROJECTS: Project[] = [
     description:
       "This is web site display users after fetch them from api and navigate from pages with react router",
     technologies: ["HTML", "CSS", "React", "React route", "Remix icon"],
+    link: "https://ahmed7757.github.io/Users-React/"
   },
   {
     title: "Traveler Website",
@@ -38,6 +41,7 @@ export const PROJECTS: Project[] = [
     description:
       "This is front end project and this site directed to non-Egyptians who wish to visit Egypt and take some trips to the most famous places in Egypt",
     technologies: ["HTML", "CSS", "Javascript"],
+    link: "https://ahmed7757.github.io/Traveler/"
   },
   {
     title: "Move it website",
@@ -45,13 +49,15 @@ export const PROJECTS: Project[] = [
     description:
       "this is front end project and This site is a site for shipping goods online such as FedEx.",
     technologies: ["HTML", "Bootstrap"],
+    link: "https://ahmed7757.github.io/move-it/"
   },
   {
     title: "Login Page",
     image: project5,
     description: "A simple Login and Register page.",
     technologies: ["HTML", "CSS", "Javascript"],
-  },
+    link: "https://ahmed7757.github.io/Login-Page/#"
+  }
 ];
 
 export const CONTACT: { address: string; phoneNo: string; email: string } = {
