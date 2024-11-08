@@ -66,3 +66,24 @@ export const CONTACT: { address: string; phoneNo: string; email: string } = {
   email: "ag8496001@gmail.com",
 };
 
+interface experience {
+  title: string;
+  type: string,
+  description: string;
+  technologies: string[];
+}
+
+export const Experiences: experience[] = [
+  {
+    title: "Tiba Academy Training",
+    type: "Summer Training",
+    description: "Front-End Summer training at Tiba Academy, which is where I enrolled as a computer science student. In this training, I learned front-end basics like HTML, CSS, JavaScript, and Bootstrap.",
+    technologies: ["HTML", "CSS", "JS", "Bootstrap"]
+  },
+  {
+    title: "DEPI Internship",
+    type: "Internship",
+    description: "Interned for 6 months in the MERN stack at Digital Egypt Pioneers with the Ministry of Communications and Information Technology, where I learned modern web technologies such as React.js, Node.js, Express.js, and MongoDB.",
+    technologies: ["HTML", "CSS", "JS", "Bootstrap", "TailwindCSS", "React.js", "JQuery", "Node.js", "Express.js", "MongoDB"]
+  }
+]
